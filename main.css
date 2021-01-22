@@ -2,6 +2,10 @@
     font-family: Felix;
     src:url("assets/FelixTitling.ttf");
 }
+@font-face {
+    font-family: Trojan;
+    src:url("assets/trajan-pro-3_942.otf");
+}
 
 }
 
@@ -14,10 +18,10 @@ body, html {
 
 header {
     padding-top: 90px;
-    margin-left: 35%;
+    margin-left: 5%;
     font-size: 50pt;
     font-family: Felix;
-    
+    text-align: center;
 }
 
 
@@ -47,7 +51,7 @@ button a {
 
 p {
     text-align: center;
-    font-family: Felix;
+    font-family: Trojan;
     font-size: 17pt;
     font-style:italic;
     font-weight: bold;
@@ -125,3 +129,17 @@ section {
   display: table;
   clear: both;
 }
+
+h2 {
+    font-family: Trojan;
+}
+
+    @media screen and (max-width: 1105px) {
+        .column {
+            width: 100%;
+        }
+        header {
+            padding-top: 140px;
+        }
+    }
+

@@ -28,7 +28,7 @@ function display_UTC() {
 	var userDate = new Date()
 	var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	var dateUTC=userDate.toUTCString();// changing the display to UTC string
-	var newString = dateUTC.replace('GMT');
+	var newString = dateUTC.replace('GMT' , '');
 	
 	document.getElementById('UTC').innerHTML = newString;
 	display_c();
