@@ -1,0 +1,127 @@
+@font-face {
+    font-family: Felix;
+    src:url("assets/FelixTitling.ttf");
+}
+
+}
+
+body, html {
+    height: 100vw;
+    background-color: #EEE5BD;
+    /*position: absolute;*/
+    min-height: calc(100vh-246px-78px);
+}
+
+header {
+    padding-top: 90px;
+    margin-left: 35%;
+    font-size: 50pt;
+    font-family: Felix;
+    
+}
+
+
+img {
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    float: left;
+    z-index: 4;
+    
+}
+
+button {
+    height: 50px;
+    width: 125px;
+    position: absolute;
+    transform: translate(290%, 100%);
+    background-color: #5C0C51;
+    
+}
+button a {
+    font-weight: bold;
+    color: aliceblue;
+    font-family: Felix;
+    font-size: 18pt;
+}
+
+p {
+    text-align: center;
+    font-family: Felix;
+    font-size: 17pt;
+    font-style:italic;
+    font-weight: bold;
+   
+}
+#networking {
+    display: block;
+    width: 50%;
+    position: relative;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.parallax {
+    background-image: url('assets/opnl_1_786px.jpg');
+    padding-bottom: 250px;
+    padding-top: 100px;
+    background-size: cover; 
+    margin-left: 25%;
+    margin-right: 25%;
+    background-attachment: fixed;
+    background-position: min(max(50% 50%)50% 50%);
+}
+section {
+    background-color: #D1D93B;
+    margin-left:5%;
+    margin-right: 5%;
+    height: 100%;
+    
+}
+
+.footer {
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+    
+}
+
+.time {
+	padding-top: 20px;
+	font-family: Felix;
+	color: #EEE5BD;
+	font-size: min(max(50px), 8vw);
+	margin: auto;
+	}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+    
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 850PX; 
+    
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

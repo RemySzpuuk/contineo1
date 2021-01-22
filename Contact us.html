@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-GB">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="script" href="UTC.js"> 
+        <link rel="script" href="Map.js">
+        
+    </head>
+    <img src="assets/Picture1.png">
+<navbar class="header">
+    <div class=sticky>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li><h3 style="padding-left: 150px"></h3></li>
+        <li class="active"><a href="Home.html"><h3> Home </h3></a></li>
+        
+        <div class = "dropdown">
+            <li class="dropbtn"><h3> Services </h3>
+        <div class="dropdown-content">
+            <a href="Webhosting.html"><h3> Web </h3></a>
+            <a href="Online%20servers.html"><h3> Server </h3></a>
+            <a href="Bespoke%20Network%20solutions.html"><h3> Bespoke </h3></a>
+            </div>
+            </li>
+        </div>
+        
+        <li><a href="join%20the%20team.html"><h3> Join Us </h3></a></li>
+        <li><a href="FAQ.html"><h3> FAQ </h3></a></li>
+        <li><a href="Contact%20us.html"><h3> Contact us </h3></a></li>
+    </ul>
+    </div>
+</navbar>
+
+<body onload="display_UTC();">
+    <header>Contact us</header>
+    <section>
+        
+        <p>For any other related questions please send us a email and we will get back to you as soon as we can. primairly use this if the FAQ does not answer your question or you would like a different answer. Please provide your name, email and also what you would like to say.</p>
+
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+        
+        <p>If not please find us at our location below</p>
+        
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer> </script>
+        <div id="map"></div>
+            <script>
+      
+      function initMap() {
+        
+        const uluru = { lat: -25.344, lng: 131.036 };
+        
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+                
+    </script>
+    </section>
+    
+    <div class='footer'>
+        <div style="text-align: center;">
+            <span id='UTC' class='time'></span>
+            <script src="UTC.js"></script>
+        </div>
+    </div>
+</body>
+</html>
