@@ -1,2 +1,2 @@
-# contineo1
-Website
+# Contineo
+Website made for a school project.
